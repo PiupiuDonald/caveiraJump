@@ -34,7 +34,6 @@
     position: absolute;
     width: 125px;
     bottom: 0;
-    z-index: 1;
 }
 .jump{
     animation: jump 900ms ease-out;
@@ -98,10 +97,10 @@
         display: flex;
     }
     .point{
-        margin: 0 16em 0 0;
+        margin: 0 14em 0 0;
     }
     .game-board{
-        height: 143vw;
+        height: 150vw;
     }
     .estrela{
         width: 1500px;
@@ -111,7 +110,7 @@
     }
     .lixo{
         width: 90px;
-        animation: lixo-animation 2s infinite linear;
+        animation: lixo-animation 1.5s infinite linear;
     }
     
     

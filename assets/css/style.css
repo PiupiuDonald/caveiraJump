@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.game-board{
+    width: 100%;
+    height: 48.1vw;
+    border-bottom: 15px solid #3a2508;
+    margin: 0 auto;
+    background: linear-gradient(#0c043d, #140785);
+    position: relative;
+    overflow: hidden;
+
+}
+.lixo{
+    position: absolute;
+    bottom: 0;
+    width: 90px;
+    animation: lixo-animation 1s infinite linear;
+}
+
+@keyframes lixo-animation {
+    from{
+        right: -90px;
+    }
+    to{
+        right: 100%;
+    }
+}
+
+.esqueleto{
+    position: absolute;
+    width: 125px;
+    bottom: 0;
+    z-index: 1;
+}
+.jump{
+    animation: jump 900ms ease-out;
+}
+@keyframes jump{
+    0%{
+        bottom: 0;
+    }
+    30%{
+        bottom: 100PX;
+    }
+    40%{
+        bottom: 120px;
+    }
+    50%{
+        bottom: 130px;
+    }
+    60%{
+        bottom: 120px;
+    }
+    70%{
+        bottom: 100px;
+    }
+    80%{
+        bottom: 70px;
+    }
+    90%{
+        bottom: 30px;
+    }
+    100%{
+        bottom: 0;
+    }
+}
+
+.estrela{
+    padding: 5% 0;
+    position: absolute;
+    width: 1000px;
+    animation: estrelas-animation 8s infinite linear;
+}
+
+@keyframes estrelas-animation {
+    from{
+        right: -1000px;
+    }
+
+    to{
+        right: 100%;
+    }
+}
+
+.Pontos{
+    margin: 1% 1%;
+    position: absolute;
+    color: red;
+}
+
+@media (max-width: 450px){
+    .Pontos {
+        font-size: 1rem;
+        display: flex;
+    }
+    .point{
+        margin: 0 16em 0 0;
+    }
+    .game-board{
+        height: 143vw;
+    }
+    .estrela{
+        width: 1500px;
+    }
+    .esqueleto{
+        width: 100px;
+    }
+    .lixo{
+        width: 90px;
+        animation: lixo-animation 2s infinite linear;
+    }
+    
+    
+}

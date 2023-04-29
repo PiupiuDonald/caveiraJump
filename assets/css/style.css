@@ -100,7 +100,7 @@
         margin: 0 14em 0 0;
     }
     .game-board{
-        height: 150vw;
+        height: 180vw;
     }
     .estrela{
         width: 1500px;
@@ -110,7 +110,7 @@
     }
     .lixo{
         width: 90px;
-        animation: lixo-animation 1.5s infinite linear;
+        animation: lixo-animation 1s infinite linear;
     }
     
     

@@ -36,6 +36,8 @@ const jump = () => {
     }, 600);
 }
 
+var Mobile = window.innerWidth;
+
 if(Mobile >= 500){
 const loop = setInterval(() => {
 const lixoPosition = lixo.offsetLeft;
@@ -67,7 +69,7 @@ const estrelasPosition =  +window.getComputedStyle(estrelas).right.replace('px',
 document.addEventListener('keydown', jump);
 document.addEventListener('touchstart', jump);
 
-var Mobile = window.innerWidth;
+
 
 if(Mobile <= 450){
     document.addEventListener('touchstart', (jump) =>{
